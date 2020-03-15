@@ -1,24 +1,33 @@
 import React from 'react';
+import { render } from 'react-dom';
 import logo from './logo.svg';
 import './App.css';
+import Search from './components/Search';
+import Gif from './components/Gif';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="App sobump">
+      <header className="sobump-header">
+        <img src={logo} className="sobump-logo" alt="logo" />
+        <Search />
       </header>
+      <section>
+        <ul className="sobump-results">
+          <Gif />
+          <Gif />
+          <Gif />
+          <Gif />
+          <Gif />
+          <Gif />
+          <Gif />
+          <Gif />
+          <Gif />
+          <Gif />
+          <Gif />
+          <Gif />
+        </ul>
+      </section>
     </div>
   );
 }

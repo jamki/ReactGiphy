@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+} */
+
+:root {
+  --site-padding: 10px;
+  --col-gap: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.sobump {
+  margin: 0 auto;
+  max-width: 1000px;
+  box-sizing: border-box;
+}
+
+.sobump-header {
+  display: grid;
+  justify-items: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: var(--site-padding);
 }
 
-.App-link {
-  color: #61dafb;
+.sobump-logo {
+  padding: var(--site-padding);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sobump-search {
+  box-sizing: border-box;
+  padding: var(--site-padding);
+  width: 100%;
+}
+
+.sobump-results {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  list-style: none;
+  margin: 0;
+  padding: var(--site-padding);
+  column-gap: var(--col-gap);
+  row-gap: var(--col-gap);
+}
+
+.sobump-results li {
+  margin: 0;
+}
+
+.sobump-results img {
+  width: 100%;
 }
