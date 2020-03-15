@@ -7,6 +7,7 @@ class Search extends React.Component {
 
   newSearch(keyword) {
     console.log(keyword);
+    // To do…
   }
 
   render() {
