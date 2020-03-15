@@ -15,7 +15,10 @@ Not included:
 
 ## Running the Project
 
-### `npm start`
+1. Clone repo
+1. cd into `so-bump`
+1. `npm install`
+1. `npm start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
